@@ -58,5 +58,8 @@ BUBBLE SORT
 				for j in range(0,n-i):			
 					if arr[j]>arr[i]:
 						SWAP
+SELECTION SORT
+		exactly opposit to bubble sort
+		every time we have to calculate the min value after each iteration
 
 
