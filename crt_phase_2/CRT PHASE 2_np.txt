@@ -53,6 +53,10 @@ Solution for the Book Allocation problem::::
 
 
 BUBBLE SORT
-		NEXT element > --------- swap
+		NEXT element > --------- swap for n iterations
+			for i in range(0,n):
+				for j in range(0,n-i):			
+					if arr[j]>arr[i]:
+						SWAP
 
 
