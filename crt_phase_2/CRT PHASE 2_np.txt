@@ -1,0 +1,58 @@
+CRT PHASE 2
+1.Searching 
+2.sorting
+3.Linked list
+4.Trees
+5.Stack and queues 
+6.Graphs
+
+
+
+Searching---- linear search and binary search
+ 1.linear search --- bestcase---- O(1)
+		     --- worst case--- O(N)
+
+
+2. binary searxh ----- O(log(N))
+
+Questions
+1.	L=[1,4,4,4,9,13,15,15] using binary search find the first and last occurance of 4 and 15 
+2.	L=[1,3,6,7,9,5,2] find the peak element using the binaru search without sorintg the element --- an element where all the values to the leftof it are smaller and that of to the right are larger
+3.	Each student should have at least one book
+  One book should be allotted to only one student
+Books should be allocated in consecutive order 10—20—30—40
+The max number of pages allotted to a student should be minimun  [Book allocation problem][asked in Microsoft and amazon
+Assending order --- books 
+
+
+[10,20,30,40]
+Possibilities :
+S1:10     and     s2:20,30,40     max allocated---- 20+30+40=90
+S1:10,20    and      s2:30,40     max allocated---- 30+40=70
+S1:10,20,30  and   s2:40     max allocated---- 10+20+30=60
+
+Tha max number of pages allocated to a student should be minimun antey out of all the maximum possibilities the mini value 
+BINARY SEARCH SPACE IS THE RANGE FROM 0 TO MAX
+Ante max oka student ki 60 ey allocate cheyyagalam
+In the range form 0 to the max(SUM OF All)
+If solution no tpossible start=mid+1
+If sol is possible then end=mid-1
+
+
+
+[		aggressive cows    			angry birds 		]
+
+Solution for the Book Allocation problem::::
+	1.get the search range for the problem i.e., the minimum[0] to the max[sum of all the values of the pages]---- Range—[0,sum]
+	2.Now find the mid value for the search range mid=(s+e)/2. This will help us determine the minimum of the  max number of pages 
+	3.now add the pages into the student consecutively until the sum>mid.Once the sum >mid add the remaining pages to other student until that sum>mid 
+	4. if all the pages are set then consider that mid value as ONE OF THE POSSIBLE MAXS. Now find another max in the range of start and the successful case of this mid value
+	5. if any of the cases are not satisfied then considerate as failed case. Note that for the failed mid value there is no chance of existenceof amid value less thatn that that would satisfy the cases.
+ 	6. so find a mid mid value that satisfies in the range of the pfailed mid value to the max i.e., start=mid
+	7. repeat this until the start>=end. The mid value at the last iteration would be the minimum of all the maximum values of pages a student can get satisfying all the use cases
+
+
+BUBBLE SORT
+		NEXT element > --------- swap
+
+
