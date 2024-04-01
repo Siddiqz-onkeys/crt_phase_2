@@ -138,4 +138,21 @@ print(bin(stu,pages))
 
 
 
+#Bubble Sort
+def bubble_sort(L):
+    n=len(L)
+    for i in range(0,n-1):
+        for j in range(0,n-i-1):
+            if L[j]>L[j+1]:
+                temp=L[j]
+                L[j]=L[j+1]
+                L[j+1]=temp
+    print(L)
+
+L=[122,55,128,66,357,159]
+bubble_sort(L)
+
+
+
+
 
