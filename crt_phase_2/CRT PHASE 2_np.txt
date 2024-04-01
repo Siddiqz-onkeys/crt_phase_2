@@ -63,3 +63,14 @@ SELECTION SORT
 		every time we have to calculate the min value after each iteration
 
 
+
+
+
+
+
+
+
+implement selection sort and aggressive cows
+
+
+
