@@ -1,21 +1,23 @@
 print("Linked lists...")
+#to create a new node
 class Node:
     def __init__(self,data) :
         self.data=data
         self.next=None
+#to add an element ar the beginning
 def insert_at_begg(head,data):
     New_node=Node(data)
     New_node.next=head
     head=New_node
     return head
-
+#to add an element at the ending
 def insert_at_end(head,data):
     new_node=Node(data)
     temp=head
     while temp.next!=None:
         temp=temp.next
     temp.next=new_node
-
+#to find the count of the linked list
 def count_fun(head):
     count=0
     temp=head
@@ -23,7 +25,7 @@ def count_fun(head):
         count+=1
         temp=temp.next
     return count
-
+#to find the mid value of the list
 def mid_val(head,count):
     temp=head
     count_2=0
@@ -33,7 +35,7 @@ def mid_val(head,count):
             print("Mid value is: ",temp.data)
             break
         temp=temp.next  
-
+#to delete data from the linked list
 def remove_link(head,data):
     temp=head
     while temp!=None:
@@ -51,6 +53,8 @@ def display(head):
         print(temp.data)
         temp=temp.next
 
+
+#start of the main body
 head=Node(3)
 second=Node(23)
 third=Node(43)
