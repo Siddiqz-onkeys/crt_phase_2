@@ -65,6 +65,22 @@ SELECTION SORT
 
 
 
+SKIP AND DELETE
+def s_d(head,s,sd):
+	temp=head
+	s1=1
+	d1=0
+	while temp!Nonw and s1<s:
+		temp=temp.next
+		s1+=1
+	store_temp=temp
+	while temp!=None and d1<d:
+		temp=temp.next
+		d1+=1
+	store_temp.next=temp.next
+
+
+
 
 
 
